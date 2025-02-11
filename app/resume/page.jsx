@@ -40,7 +40,7 @@ const internExp = {
     {
       company: "Sri Sairam Techno Incubator Foundation",
       position: "Unity VR Developer Intern",
-      duration: "FEB 2024 - PRESENT",
+      duration: "FEB 2024 - JAN 2025",
       description: [
         "Contributed to the Interactive Skills Enhancer, improving learning for children with ASD and ID.",
         "Developed Merritopia, enabling immersive therapy through virtual reality.",
@@ -65,7 +65,7 @@ const education = {
   title: 'My Education',
   items:[
     {
-      school: "Sri Sairam Engineering College",
+      school: "Sri Sairam Engineering College, Chennai",
       year: "BE - Computer Science and Engineering",
       percentage: "85.3%",
       duration: "2021 - 2025"

@@ -59,17 +59,23 @@ const Contact = () => {
           {/* Info*/}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
-              {info.map((item,index)=>{
-                return <li key={index} className="flex items-center gap-6">
-                  <div className="w-[52px] h-[52px] xl:w-[72px] bg-[#391c31] text-accent-hover rounded-md flex items-center justify-center ">
-                    <div>{item.icon}</div>
+              {info.map((item, index) => (
+                <li key={index} className="flex items-center gap-6">
+                  <div className="w-[52px] h-[52px] xl:w-[72px] bg-[#391c31] text-accent-hover rounded-md flex items-center justify-center">
+                    {item.title === "E-mail" ? (
+                      <a href={`mailto:${item.description}`} target="_blank" rel="noopener noreferrer">
+                        {item.icon}
+                      </a>
+                    ) : (
+                      <div>{item.icon}</div>
+                    )}
                   </div>
                   <div className="flex-1">
                     <p className="text-accent-hover">{item.title}</p>
                     <h2 className="text-xl">{item.description}</h2>
                   </div>
                 </li>
-              })}
+              ))}
             </ul>
           </div>
         </div>

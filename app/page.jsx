@@ -17,13 +17,16 @@ export default function Home() {
             <p className="max-w-[500px] mb-7 text-accent">
               Driven by a love for technology and problem-solving, I create innovative <span className="text-accent-hover font-semibold">Digital</span> and <span className="text-accent-hover font-semibold"> Virtual Solutions</span> to enhance user experiences. Always eager to learn, grow and push boundaries in the tech space.</p>
               <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
                 className="border border-accent-hover rounded-full flex justify-center items-center text-accent-hover text-base hover:bg-accent-hover hover:text-primary hover:transition-all duration-500 uppercase gap-2"
-                >
-                <span className="inherit">Download Resume</span>
-                <FiDownload className="text-xl inherit"/>
+              >
+                <a href="/LSNarmadhaResume110225.pdf" download>
+                  <span>Download Resume</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
 
               <div className="mb-8 xl:mb-0">

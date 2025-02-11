@@ -79,18 +79,24 @@ const Highlights = () => {
                 {/* Button */}
                 <div className="text-accent-hover">
                   {/* External Link Button */}
-                  <Link href={activity.clip}>
                   <TooltipProvider delayDuration={100} >
                     <Tooltip className="-mt-3">
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <Link 
+                          href={activity.clip} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex justify-center items-center"
+                        >
                         <BsArrowUpRight className="text-accent-hover text-4xl hover:text-accent" />
+                      </Link>
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Explore</p>
                       </TooltipContent>
                     </Tooltip>  
                   </TooltipProvider>              
-                  </Link>
+                
                 </div>
               </div>
             </div>
