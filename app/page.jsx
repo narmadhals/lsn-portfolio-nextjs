@@ -23,7 +23,7 @@ export default function Home() {
                 size="lg"
                 className="border border-accent-hover rounded-full flex justify-center items-center text-accent-hover text-base hover:bg-accent-hover hover:text-primary hover:transition-all duration-500 uppercase gap-2"
               >
-                <a href="/LSNarmadhaResume110225.pdf" download>
+                <a href="/LSNarmadha_Resume110225.pdf" download>
                   <span>Download Resume</span>
                   <FiDownload className="text-xl" />
                 </a>
